@@ -1,0 +1,103 @@
+{
+    "name" : "水泥制品",
+    "appid" : "__UNI__BA528FD",
+    "description" : "",
+    "versionName" : "1.0.0-alpha.1",
+    "versionCode" : "100",
+    "transformPx" : false,
+    // 请求超时设置
+    "networkTimeout" : {
+        "request" : 30000
+    },
+    "app-plus" : {
+        "safearea" : {
+            "background" : "#f2f2f2", // 安全区域外的背景颜色，默认值为"#FFFFFF"  
+            "bottom" : {
+                // 底部安全区域配置  
+                // 底部安全区域偏移，"none"表示不空出安全区域，"auto"自动计算空出安全区域，默认值为"none"  
+                "offset" : "none|auto"
+            },
+            "left" : {
+                // 左侧安全区域配置（横屏显示时有效）  
+                "offset" : "none|auto"
+            },
+            "right" : {
+                // 右侧安全区域配置（横屏显示时有效）  
+                "offset" : "none|auto"
+            }
+        },
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "modules" : {
+            "Push" : {},
+            "Geolocation" : {}
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    // "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    // "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    // 个推所需的权限
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_TASKS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>"
+                ]
+            },
+            "ios" : {},
+            "sdkConfigs" : {
+                "payment" : {},
+                "push" : {
+                    "unipush" : {}
+                },
+                "ad" : {},
+                "geolocation" : {
+                    "baidu" : {
+                        "__platform__" : [ "android" ],
+                        "appkey_ios" : "",
+                        "appkey_android" : "l1WUw1juyEu8hYrgxrWVnrObA9N1Lh77"
+                    }
+                }
+            }
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : true
+        }
+    },
+    "h5" : {
+        "devServer" : {
+            "port" : ""
+        },
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : ""
+                }
+            }
+        }
+    }
+}

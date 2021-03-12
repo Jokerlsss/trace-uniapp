@@ -1,0 +1,67 @@
+{
+	"easycom": {
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		// 下载安装方式
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		// npm安装方式
+		// "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+		"path": "pages/trace/trace",
+		"style": {
+			"navigationBarTitleText": "鹰眼demo",
+			"enablePullDownRefresh": false
+		}
+	}, {
+		"path": "pages/login/index",
+		"style": {
+			"enablePullDownRefresh": false,
+			"navigationStyle": "custom",
+			"app-plus": {
+				// adjustPan: 界面会随键盘弹起而增加滚动条,
+				// adjustResize：界面会固定不动
+				"softinputMode": "adjustResize"
+			}
+		}
+	}],
+	"globalStyle": {
+		// // 全局默认标题栏头部
+		// "navigationBarTitleText": "智能管控系统",
+		"navigationBarBackgroundColor": "#6C9EFF",
+		// 下拉刷新
+		// "enablePullDownRefresh": "true",
+		// onReachBottomDistance 不能设置为 0，否则会导致 oppo 机型下触底函数不触发
+		"onReachBottomDistance": 50,
+		//全局 在APP页面都不显示滚动条
+		"app-plus": {
+			"scrollIndicator": "none"
+		}
+	},
+	"usingComponents": {
+		"v-no-more": "./components/v-no-more/v-no-more",
+		"v-form-menu": "./components/v-form-menu/v-form-menu",
+		"v-input": "./components/v-input/v-input",
+		"v-button": "./components/v-button/v-button",
+		"position-headerInfo": "./components/position-headerInfo/position-headerInfo",
+		"position-clock": "./components/position-clock/position-clock",
+		"v-clock-step": "./components/v-clock-step/v-clock-step",
+		"v-clock-step-vertical": "./components/v-clock-step-vertical/v-clock-step-vertical",
+		"v-table": "./components/v-table/v-table",
+		"v-table-column": "./components/v-table-column/v-table-column",
+		"v-main-operate-item": "./components/v-main-operate-item/v-main-operate-item",
+		"v-card-item": "./components/v-card-item/v-card-item",
+		"v-approve-flow-step": "./components/v-approve-flow-step/v-approve-flow-step",
+		"v-perform-item": "./components/v-perform-item/v-perform-item",
+		"v-date-choose-step": "./components/v-date-choose-step/v-date-choose-step",
+		"v-data-get-content": "./components/v-data-get-content/v-data-get-content",
+		"v-bottom-btn": "./components/v-bottom-btn/v-bottom-btn",
+		"v-equiment-card": "./components/v-equiment-card/v-equiment-card",
+		"v-equiment-card-jc": "./components/v-equiment-card-jc/v-equiment-card-jc",
+		"v-approve-flow": "./components/v-approve-flow/v-approve-flow",
+		"v-handle": "./components/v-handle/v-handle",
+		"v-approve-bottom-btn": "./components/v-approve-bottom-btn/v-approve-bottom-btn",
+		"EmployeeSelect": "./components/EmployeeSelect/EmployeeSelect",
+		"EmployeeSelectExtend": "./components/EmployeeSelectExtend/EmployeeSelectExtend",
+		"v-null-data": "./components/v-null-data/v-null-data"
+	}
+}
